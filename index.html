@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="./assets/style.css">
+  </head>
+  <body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <img src="./assets/images/imc-icon.png" alt="balança">
+    </header>
+    <section class="calculator">
+      <form id="imc-form">
+        <label for="weight">Insira seu peso:</label>
+        <input type="number" id="weight" step="0.01" required />
+        <label for="weight">kg</label>
+        <br />
+        <br />
+        <label for="height">Insira sua altura:</label>
+        <input type="number" id="height" step="0.01" required />
+        <label for="height">m</label>
+        <br />
+        <br />
+        <button type="submit" class="button">Calcular</button>
+        <br />
+        <br />
+        <p><span id="result"></span></p>
+        <p>Situação: <span id="situation"></span></p>
+      </form>
+    </section>
+    <section class="information">
+        <div class="informationText">
+            <h3>Cálculo IMC</h3>
+            <p>IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.</p>
+            <p>O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.</p>
+        </div>
+        <div class="informationTable">
+            <table>
+                <thead>
+                    <th>IMC</th>
+                    <th>Classificação</th>
+                    <th>OBESIDADE (grau)</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>MENOR QUE 18,5</td>
+                        <td>MAGREZA</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 18,5 E 24,9</td>
+                        <td>NORMAL</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 25 E 29,9</td>
+                        <td>SOPREPESO</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>ENTRE 30 E 39,9</td>
+                        <td>OBESIDADE</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>MAIOR QUE 40</td>
+                        <td>OBESIDADE GRAVE</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Define as propriedades de estilo padrão */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f2f2f2;
+}
+
+/* Estiliza o cabeçalho */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 3.125rem;
+}
+
+header img {
+    width: 4.375rem;
+    height: 4.375rem;
+}
+
+/* Estiliza a calculadora */
+.calculator {
+    max-width: 31.25rem;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1.875rem;
+    border-radius: 0.3125rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.625rem;
+}
+
+input {
+    display: inline-block;
+    width: 8rem;
+    padding: 0.3125rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #ccc;
+    margin-bottom: 1.25rem;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.625rem 1.25rem;
+    background-color: #3f51b5;
+    color: #fff;
+    font-size: 1.125rem;
+    border-radius: 0.3125rem;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1.25rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a237e;
+}
+
+.calculator p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+}
+
+#result {
+    color: #3f51b5;
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+#situation {
+    color: #f44336;
+    font-size: 1.5rem;
+}
+
+.informationText {
+    margin: 0 1.5rem;
+}
+
+/* Estiliza a tabela */
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 1.25rem;
+}
+
+th, td {
+    text-align: center;
+    padding: 0.5rem;
+    border: 0.0625rem solid #ddd;
+}
+
+th {
+    background-color: #3f51b5;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #fff
+}
+
+
+/* Responsividade */
+
+/* Para telas menores que 768px */
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 1rem;
+    }
+
+    header img {
+        width: 3rem;
+        height: 3rem;
+    }
+    
+    body {
+        font-size: 1em;
+    }
+    
+    
+    .calculator {
+        max-width: 43.75em;
+        padding: 1.25em;
+    }
+    
+    button {
+      margin-bottom: 0;
+    }
+
+    .information {
+        font-size: 0.8rem;
+    }
+     
+}
+    
+/* Para telas menores que 576px */
+    
+@media only screen and (max-width: 576px) {
+    body {
+        font-size: 1.2em;
+    }
+        
+        
+    .calculator {
+        max-width: 18.75em;
+        padding: 0.625em;
+    }
+        
+    input[type="text"] {
+        width: 5em;
+    }
+}
+    
+/* Para telas maiores que 1200px */
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 1.8em;
+    }
+        
+        
+    .calculator {
+        text-align: center;
+        max-width: 40em;
+        padding: 3em;
+    }
+
+    .calculator > input {
+        
+        width: 4rem;
+    }
+}
+    
+    
+    
+    
